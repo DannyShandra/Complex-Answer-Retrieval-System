@@ -19,10 +19,10 @@ Heres how the code should be run in the terminal:
 2. Once all files are in the same folder, execute the following command to retrieve 100 passages from the corpus set:
 ***NOTE: this process may take some time depending on the number of passages retrieved***
 
-python test_gen_rankings.py train.benchmarkY1train.cbor.outlines train.benchmarkY1train.cbor.paragraphs [output.______.run] RANK1 100 5
+`python test_gen_rankings.py train.benchmarkY1train.cbor.outlines train.benchmarkY1train.cbor.paragraphs [output.______.run] RANK1 100 5`
   
 The command will attempt to retrieve 100 passages, and out of those 100 passsages, 5 will be used to compute the weight scores of the query  
 
 3. After the run file is created, it must be inputted into the eval_framework file to get the precision metrics:
 
-python eval_framework.py train.benchmarkY1train.cbor.hierarchical.qrels [output.______.run]
+`python eval_framework.py train.benchmarkY1train.cbor.hierarchical.qrels [output.______.run]`
